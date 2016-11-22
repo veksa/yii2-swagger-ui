@@ -8,8 +8,6 @@ class SwaggerUiAsset extends AssetBundle
     public $sourcePath = '@bower/swagger-ui/dist';
 
     public $js = [
-        'lib/jquery-1.8.0.min.js',
-        'lib/underscore-min.js',
         'lib/backbone-min.js',
         'lib/handlebars-4.0.5.js',
         'swagger-ui.js',
@@ -29,5 +27,10 @@ class SwaggerUiAsset extends AssetBundle
         'css/reset.css',
         'css/screen.css',
         'css/typography.css'
+    ];
+
+    public $depends = [
+        'veksa\swagger\yii2\assets\JquerySwaggerUiAsset',
+        'veksa\swagger\yii2\assets\UnderscoreAsset'
     ];
 }
