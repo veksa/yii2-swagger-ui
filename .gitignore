@@ -1,0 +1,7 @@
+## Composer
+
+composer.lock
+vendor/
+
+## Directory-based project format:
+.idea/

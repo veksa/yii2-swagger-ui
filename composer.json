@@ -1,0 +1,41 @@
+{
+    "name": "veksa/yii2-swagger-ui",
+    "description": "Yii2 Swagger UI",
+    "keywords": [
+        "php",
+        "yii2",
+        "swagger-ui",
+        "swagger",
+        "extension",
+        "component"
+    ],
+    "homepage": "https://github.com/veksa/yii2-swagger-ui",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Khijnij",
+            "email": "admin@devblog.pro",
+            "homepage": "https://devblog.pro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0",
+        "yiisoft/yii2": "*",
+        "bower-asset/swagger-ui": "^2.2.6"
+    },
+    "autoload": {
+        "psr-4": {
+             "veksa\\swagger\\yii2\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
