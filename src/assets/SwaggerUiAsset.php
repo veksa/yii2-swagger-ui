@@ -8,9 +8,11 @@ class SwaggerUiAsset extends AssetBundle
     public $sourcePath = '@bower/swagger-ui/dist';
 
     public $js = [
-        'swagger-ui.min.js',
+        'lib/jquery-1.8.0.min.js',
+        'lib/underscore-min.js',
         'lib/backbone-min.js',
         'lib/handlebars-4.0.5.js',
+        'swagger-ui.js',
         'lib/highlight.9.1.0.pack.js',
         'lib/highlight.9.1.0.pack_extended.js',
         'lib/jquery.ba-bbq.min.js',
@@ -26,11 +28,6 @@ class SwaggerUiAsset extends AssetBundle
     public $css = [
         'css/reset.css',
         'css/screen.css',
-        'css/style.css',
         'css/typography.css'
-    ];
-
-    public $depends = [
-        'yii\web\YiiAsset'
     ];
 }
